@@ -1,15 +1,16 @@
-import 'package:flutter/material.dart';
-
-part 'pages.dart';
+part of 'pages.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Main Page"),
+        child: Text(
+          "Main Page",
+          style: AppTypography.blackw400,
+        ),
       ),
     );
   }

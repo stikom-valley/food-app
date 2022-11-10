@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/ui/pages/main_page.dart';
+import 'package:food_app/ui/pages/pages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MainPage(),
+      home: ExamplePage(),
     );
   }
 }
