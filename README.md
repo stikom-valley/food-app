@@ -9,9 +9,8 @@ Food App is Online Food Delivery App developed with Flutter. Created with Flutte
 **Development Environment Preparation**
 
 1. Install [Flutter](https://docs.flutter.dev/get-started/install), we recommend installing Flutter with version 3 or higher.
-2. Clone the Project.
-3. Download the UI design on this [link](https://www.figma.com/file/3t50dDJpIiBs44tvMZop9r/Online-food-delivery-app-(With-vectors-of-illustrations)-(Community)?node-id=0%3A1).
-4. Congrats! You are ready to make a contribution. How can I contribute? 
+2. Download the UI design on this [link](https://www.figma.com/file/3t50dDJpIiBs44tvMZop9r/Online-food-delivery-app-(With-vectors-of-illustrations)-(Community)?node-id=0%3A1).
+3. Congrats! You are ready to make a contribution. [How can I contribute?](https://github.com/stikom-valley/food-app/edit/master/README.md#how-can-i-contribute) 
 
 ## Project structure
 
@@ -56,5 +55,32 @@ This the example page looks like:
 
 <img width="207" alt="Example Page" src="https://user-images.githubusercontent.com/44092368/201589731-12cd8c92-207c-4f55-a297-f70ee134f2bd.png">
 
-## How can I contribute?
--- coming soon..
+## [How can I contribute?](https://github.com/stikom-valley/food-app/blob/master/CONTRIBUTING.md)
+
+Before you start making contribution make these things clear 
+
+1) Dont make spam PR's like just add adding (.) and spaces in the file.
+2) Make sure you add some value to the repository.
+3) Spam PR's wont get merged
+4) Go click and check the link above "How can I contribute?" 🙌
+
+### NOTE
+
+- Make Sure you commit your changes in a new branch.
+- Make Sure you Give proper name to your files describing the addition.
+- Also Make Sure you comment your code wherever necessary.
+- And last but not least, don't forget to read and keep updated with the documentation of the project [above](https://github.com/stikom-valley/food-app/edit/master/README.md#project-structure) after you made your changes/modifications.
+
+After a valid pull request, your code will be carefully reviewed and if it matches the rule then it will be accepted otherwise you need to generate a new file. This process may take some time but don't worry.
+
+## REPO STATUS
+
+![GitHub PR Open](https://img.shields.io/github/issues-pr/stikom-valley/food-app?style=for-the-badge&color=aqua)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/stikom-valley/food-app?style=for-the-badge&color=blue)
+![GitHub language count](https://img.shields.io/github/languages/count/stikom-valley/food-app?style=for-the-badge&color=brightgreen)
+<br><br>
+
+## Our Contributors
+<a href="https://github.com/stikom-valley/food-app/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=stikom-valley/food-app" />
+</a>
