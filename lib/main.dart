@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/ui/pages/pages.dart';
+import 'package:food_app/utils/app_router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Flutter Demo',
-      home: ExamplePage(),
+      title: 'Food App',
+      initialRoute: AppRoutes.mainPage,
+      onGenerateRoute: AppRouter.generateRoute,
     );
   }
 }

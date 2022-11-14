@@ -1,7 +1,11 @@
 part of 'pages.dart';
 
 class ExamplePage extends StatelessWidget {
-  const ExamplePage({Key? key}) : super(key: key);
+  final String argsExample;
+  const ExamplePage({
+    Key? key,
+    required this.argsExample,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
