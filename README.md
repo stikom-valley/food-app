@@ -9,8 +9,9 @@ Food App is Online Food Delivery App developed with Flutter. Created with Flutte
 **Development Environment Preparation**
 
 1. Install [Flutter](https://docs.flutter.dev/get-started/install), we recommend installing Flutter with version 3 or higher.
-2. Download the UI design on this [link](https://www.figma.com/file/3t50dDJpIiBs44tvMZop9r/Online-food-delivery-app-(With-vectors-of-illustrations)-(Community)?node-id=0%3A1).
-3. Congrats! You are ready to make a contribution. [How can I contribute?](https://github.com/stikom-valley/food-app/edit/master/README.md#how-can-i-contribute) 
+2. Install [Android Studio](https://developer.android.com/studio?hl=id) to get the SDK and to be able to use the emulator for running the App.
+3. Download the UI design on this [link](https://www.figma.com/file/3t50dDJpIiBs44tvMZop9r/Online-food-delivery-app-(With-vectors-of-illustrations)-(Community)?node-id=0%3A1).
+4. Congrats! You are ready to make a contribution. [How can I contribute?](https://github.com/stikom-valley/food-app#how-can-i-contribute)
 
 ## Project structure
 
@@ -69,7 +70,7 @@ Before you start making contribution make these things clear
 - Make Sure you commit your changes in a new branch.
 - Make Sure you Give proper name to your files describing the addition.
 - Also Make Sure you comment your code wherever necessary.
-- And last but not least, don't forget to read and keep updated with the documentation of the project [above](https://github.com/stikom-valley/food-app/edit/master/README.md#project-structure) after you made your changes/modifications.
+- And last but not least, don't forget to read and keep updated with the documentation of the project [above](https://github.com/stikom-valley/food-app#project-structure) after you made your changes/modifications.
 
 After a valid pull request, your code will be carefully reviewed and if it matches the rule then it will be accepted otherwise you need to generate a new file. This process may take some time but don't worry.
 
