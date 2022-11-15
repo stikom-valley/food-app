@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/ui/pages/pages.dart';
 
+import '../ui/pages/on_bording/on_bording_screen.dart';
+
 abstract class AppRoutes {
   static const String examplePage = "example_page";
   static const String mainPage = "main_page";
+  static const String onBording = "onbording";
 }
 
 class AppRouter {
@@ -19,8 +22,15 @@ class AppRouter {
       case AppRoutes.mainPage:
         screen = const MainPage();
         break;
+      case AppRoutes.onBording:
+        screen = const OnBordingScreen(
+          onBording: AppRoutes.onBording,
+        );
+        break;
       default:
-        screen = const MainPage();
+        screen = const OnBordingScreen(
+          onBording: AppRoutes.onBording,
+        );
         break;
     }
     return MaterialPageRoute(builder: (_) => screen);
