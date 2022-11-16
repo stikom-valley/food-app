@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/ui/pages/Login.dart';
 import 'package:food_app/utils/app_router.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Food App',
       initialRoute: AppRoutes.mainPage,
       onGenerateRoute: AppRouter.generateRoute,
+      home: LoginPage(),
     );
   }
 }

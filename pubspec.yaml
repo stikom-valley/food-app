@@ -31,6 +31,20 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^3.0.1
+  uuid: ^3.0.6
+  firebase_auth: ^3.3.19
+  firebase_core: ^1.17.1
+  cloud_firestore: ^3.1.17
+  fluttertoast: ^8.0.9
+  flutter_barcode_scanner: ^2.0.0
+  qr_code_scanner: ^1.0.1
+  qr_flutter: ^4.0.0
+  provider: ^6.0.3
+  flutter_statusbarcolor_ns: ^0.4.0
+  #font_awesome_flutter: ^8.8.1
+  # youtube_player_flutter: ^7.0.0+7
+  hexcolor: ^3.0.1
+  dropdown_button2: ^1.8.2
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -41,6 +55,7 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
