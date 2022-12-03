@@ -1,10 +1,4 @@
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:food_app/utils/app_router.dart';
-
-import '../../utils/app_color.dart';
-import '../../utils/app_typography.dart';
-import '../widgets/widgets.dart';
+part of 'pages.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({Key? key}) : super(key: key);
@@ -89,7 +83,7 @@ class _SignupPageState extends State<SignupPage> {
                       ),
                       SizedBox(height: 25,),
                       BaseButton(
-                          child: Text("Sign Up", style: TextStyle(fontSize: 20),),
+                          child: Text("Sign Up", style: AppTypography.whitew400.copyWith(fontSize: 20),),
                           minimumSize:
                           Size(MediaQuery.of(context).size.width / 3, 40),
                           onTap: () {

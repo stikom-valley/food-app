@@ -1,8 +1,4 @@
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:food_app/ui/widgets/widgets.dart';
-import 'package:food_app/utils/app_router.dart';
-import 'package:food_app/utils/app_typography.dart';
+part of 'pages.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -12,10 +8,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
   TapGestureRecognizer _signupButtonTapRecognizer = TapGestureRecognizer();
   final _formKey = GlobalKey<FormState>();
-
 
   @override
   void dispose() {
@@ -37,13 +31,17 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () {}, icon: Icon(Icons.arrow_back_ios_new)),
                 ],
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 "Login",
                 style: AppTypography.blackw400
                     .copyWith(fontSize: 30, fontWeight: FontWeight.w600),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Form(
                 key: _formKey,
                 child: Padding(
@@ -73,15 +71,24 @@ class _LoginPageState extends State<LoginPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Text("Forgot Password?", style: AppTypography.mainw400,),
+                            GestureDetector(
+                              onTap: (){
+                                //TODO: Implement Forgot Password Functionality
+                              },
+                                child: Text(
+                              "Forgot Password?",
+                              style: AppTypography.mainw400,
+                            )),
                           ],
                         ),
                       ),
-                      SizedBox(height: 10,),
+                      SizedBox(
+                        height: 10,
+                      ),
                       BaseButton(
-                          child: Text("Sign In"),
+                          child: Text("Sign In", style: AppTypography.whitew400.copyWith(fontSize: 20),),
                           minimumSize:
-                              Size(MediaQuery.of(context).size.width / 3, 35),
+                              Size(MediaQuery.of(context).size.width / 3, 40),
                           onTap: () {
                             //TODO: Implement Login Functionality
                           }),
@@ -89,7 +96,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               RichText(
                   text: TextSpan(
                       text: "Don't have an account? ",

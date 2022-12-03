@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/ui/pages/login_page.dart';
 import 'package:food_app/ui/pages/pages.dart';
 
-import '../ui/pages/signup_page.dart';
 
 abstract class AppRoutes {
   static const String examplePage = "example_page";
