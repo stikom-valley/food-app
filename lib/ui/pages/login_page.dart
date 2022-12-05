@@ -8,7 +8,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  TapGestureRecognizer _signupButtonTapRecognizer = TapGestureRecognizer();
+  final TapGestureRecognizer _signupButtonTapRecognizer = TapGestureRecognizer();
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -28,10 +28,10 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   IconButton(
-                      onPressed: () {}, icon: Icon(Icons.arrow_back_ios_new)),
+                      onPressed: () {}, icon: const Icon(Icons.arrow_back_ios_new)),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
                 style: AppTypography.blackw400
                     .copyWith(fontSize: 30, fontWeight: FontWeight.w600),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Form(
@@ -51,18 +51,18 @@ class _LoginPageState extends State<LoginPage> {
                       TextFormField(
                         style: AppTypography.greyw400,
                         decoration: InputDecoration(
-                          label: Text("Email"),
+                          label: const Text("Email"),
                           floatingLabelStyle: AppTypography.mainw400,
-                          prefixIcon: Icon(Icons.email_outlined),
+                          prefixIcon: const Icon(Icons.email_outlined),
                         ),
                         keyboardType: TextInputType.emailAddress,
                       ),
                       TextFormField(
                         style: AppTypography.greyw400,
                         decoration: InputDecoration(
-                          label: Text("Password"),
+                          label: const Text("Password"),
                           floatingLabelStyle: AppTypography.mainw400,
-                          prefixIcon: Icon(Icons.lock_outline),
+                          prefixIcon: const Icon(Icons.lock_outline),
                         ),
                         obscureText: true,
                       ),
@@ -82,21 +82,21 @@ class _LoginPageState extends State<LoginPage> {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       BaseButton(
-                          child: Text("Sign In", style: AppTypography.whitew400.copyWith(fontSize: 20),),
                           minimumSize:
                               Size(MediaQuery.of(context).size.width / 3, 40),
                           onTap: () {
                             //TODO: Implement Login Functionality
-                          }),
+                          },
+                          child: Text("Sign In", style: AppTypography.whitew400.copyWith(fontSize: 20),)),
                     ],
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               RichText(

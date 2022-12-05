@@ -8,7 +8,7 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
-  TapGestureRecognizer _loginButtonTapRecognizer = TapGestureRecognizer();
+  final TapGestureRecognizer _loginButtonTapRecognizer = TapGestureRecognizer();
   final _formKey = GlobalKey<FormState>();
 
 
@@ -29,16 +29,16 @@ class _SignupPageState extends State<SignupPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   IconButton(
-                      onPressed: () {}, icon: Icon(Icons.arrow_back_ios_new)),
+                      onPressed: () {}, icon: const Icon(Icons.arrow_back_ios_new)),
                 ],
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               Text(
                 "Create New Account",
                 style: AppTypography.redw400
                     .copyWith(fontSize: 30, fontWeight: FontWeight.w600),
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               Form(
                 key: _formKey,
                 child: Padding(
@@ -48,52 +48,52 @@ class _SignupPageState extends State<SignupPage> {
                       TextFormField(
                         style: AppTypography.greyw400,
                         decoration: InputDecoration(
-                          label: Text("Your Name"),
+                          label: const Text("Your Name"),
                           floatingLabelStyle: AppTypography.mainw400,
-                          prefixIcon: Icon(Icons.person_outline,),
+                          prefixIcon: const Icon(Icons.person_outline,),
                         ),
                         keyboardType: TextInputType.name,
                       ),
                       TextFormField(
                         style: AppTypography.greyw400,
                         decoration: InputDecoration(
-                          label: Text("Phone Number"),
+                          label: const Text("Phone Number"),
                           floatingLabelStyle: AppTypography.mainw400,
-                          prefixIcon: Icon(Icons.phone_android),
+                          prefixIcon: const Icon(Icons.phone_android),
                         ),
                         keyboardType: TextInputType.phone,
                       ),
                       TextFormField(
                         style: AppTypography.greyw400,
                         decoration: InputDecoration(
-                          label: Text("Email"),
+                          label: const Text("Email"),
                           floatingLabelStyle: AppTypography.mainw400,
-                          prefixIcon: Icon(Icons.email_outlined),
+                          prefixIcon: const Icon(Icons.email_outlined),
                         ),
                         keyboardType: TextInputType.emailAddress,
                       ),
                       TextFormField(
                         style: AppTypography.greyw400,
                         decoration: InputDecoration(
-                          label: Text("Password"),
+                          label: const Text("Password"),
                           floatingLabelStyle: AppTypography.mainw400,
-                          prefixIcon: Icon(Icons.lock_outline),
+                          prefixIcon: const Icon(Icons.lock_outline),
                         ),
                         obscureText: true,
                       ),
-                      SizedBox(height: 25,),
+                      const SizedBox(height: 25,),
                       BaseButton(
-                          child: Text("Sign Up", style: AppTypography.whitew400.copyWith(fontSize: 20),),
                           minimumSize:
                           Size(MediaQuery.of(context).size.width / 3, 40),
                           onTap: () {
                             //TODO: Add Signup Functionality
-                          }),
+                          },
+                          child: Text("Sign Up", style: AppTypography.whitew400.copyWith(fontSize: 20),)),
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               RichText(
                   text: TextSpan(
                       text: "Already have an account? ",
