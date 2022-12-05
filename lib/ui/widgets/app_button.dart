@@ -24,7 +24,10 @@ class BaseButton extends StatelessWidget {
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(buttonColor),
         foregroundColor: MaterialStateProperty.all(textColor),
-          minimumSize: MaterialStateProperty.all(minimumSize)
+          minimumSize: MaterialStateProperty.all(minimumSize),
+        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(7)
+        ))
       ),
       child: child,
     );
