@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/ui/widgets/circular_icon_button.dart';
 import 'package:food_app/utils/app_color.dart';
+import 'package:food_app/utils/app_typography.dart';
 
 class DishSuggestionCardItem extends StatelessWidget {
   final IconData dishIcon;
@@ -12,6 +13,7 @@ class DishSuggestionCardItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width*0.2,
       decoration: BoxDecoration(
         color: isSelected?AppColor.yellowColor:AppColor.whiteColor,
         border: Border.all(color: isSelected?AppColor.yellowColor:AppColor.whiteColor),
@@ -22,11 +24,11 @@ class DishSuggestionCardItem extends StatelessWidget {
         ],
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 10),
         child: Column(
           children: [
             Icon(dishIcon,size: 40,),
-            Text(dishName),
+            Text(dishName,style: AppTypography.blackw400.copyWith(fontSize: 11),),
             CircularIconButton(icon: Icons.arrow_forward_ios, shadowColor: Colors.transparent, iconColor: AppColor.whiteColor, radius: 12,backgroundColor: AppColor.blackColor,iconSize: 13,)
           ],
         ),

@@ -12,57 +12,60 @@ class RestaurantOfTheWeekCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.symmetric(vertical: 10),
       height: MediaQuery.of(context).size.height * 0.23,
       decoration: BoxDecoration(
-          color: AppColor.mainColor.withOpacity(0.8),
+          color: AppColor.mainColor,
           borderRadius: BorderRadius.circular(10)),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment:
-              MainAxisAlignment.spaceAround,
+      child: Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
               children: [
-                GestureDetector(
-                    onTap: () {
-                      //TODO:Like functionality
-                    },
-                    child: const Icon(
-                      Icons.favorite_border,
-                      size: 28,
-                      color: AppColor.whiteColor,
-                    )),
-                Text(
-                  "Restaurant of the week",
-                  style:
-                  AppTypography.whitew400.copyWith(fontSize: 14),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment:
+                  MainAxisAlignment.spaceAround,
+                  children: [
+                    GestureDetector(
+                        onTap: () {
+                          //TODO:Like functionality
+                        },
+                        child: const Icon(
+                          Icons.favorite_border,
+                          size: 28,
+                          color: AppColor.whiteColor,
+                        )),
+                    Text(
+                      "Restaurant of the week",
+                      style:
+                      AppTypography.whitew400.copyWith(fontSize: 14),
+                    ),
+                    Text(
+                      "Hengbok Restaurant",
+                      style: AppTypography.redw400.copyWith(fontWeight: FontWeight.bold,fontSize: 18),
+                    ),
+                    CircularIconButton(
+                      icon: Icons.arrow_forward,
+                      shadowColor: AppColor.mainColor,
+                      iconColor: AppColor.blackColor,
+                      radius: 19,
+                    )
+                  ],
                 ),
-                Text(
-                  "Hengbok Restaurant",
-                  style: AppTypography.redw400.copyWith(fontWeight: FontWeight.bold,fontSize: 18),
-                ),
-                CircularIconButton(
-                  icon: Icons.arrow_forward,
-                  shadowColor: AppColor.mainColor,
-                  iconColor: AppColor.blackColor,
-                  radius: 19,
-                )
               ],
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                    width:80,
-                    height: 80,
-                    child: Image.network("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Ffood&psig=AOvVaw2rpjjXsAwOKq2RvDCgD6ZR&ust=1669301030135000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjOh4nFxPsCFQAAAAAdAAAAABAE",fit: BoxFit.cover,)),
-              ],
-            )
-          ],
-        ),
+          ),
+          Positioned(
+            right: -75,
+            top: MediaQuery.of(context).size.height*0.01,
+            child: Container(
+                width:180,
+                height: MediaQuery.of(context).size.height*0.24,
+                child: Image.asset("assets/images/noodles.png")),
+          ),
+        ],
       ),
     );
   }

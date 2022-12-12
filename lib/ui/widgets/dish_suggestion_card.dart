@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/ui/widgets/circular_icon_button.dart';
 import 'package:food_app/ui/widgets/dish_suggestion_card_item.dart';
-import 'package:food_app/utils/app_color.dart';
 
 class DishSuggestionCard extends StatefulWidget {
   @override
@@ -14,9 +12,9 @@ class _DishSuggestionCardState extends State<DishSuggestionCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.symmetric(vertical: 4),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(6.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -47,7 +45,7 @@ class _DishSuggestionCardState extends State<DishSuggestionCard> {
                     selectedItem=3;
                   });
                 },
-                child: DishSuggestionCardItem(dishIcon: Icons.ramen_dining,dishName: "Pizza", isSelected: selectedItem==3?true:false,),),
+                child: DishSuggestionCardItem(dishIcon: Icons.ramen_dining,dishName: "Ramen", isSelected: selectedItem==3?true:false,),),
           ],
         ),
       ),
