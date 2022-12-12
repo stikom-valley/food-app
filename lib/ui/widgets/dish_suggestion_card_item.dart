@@ -6,8 +6,8 @@ import 'package:food_app/utils/app_typography.dart';
 class DishSuggestionCardItem extends StatelessWidget {
   final IconData dishIcon;
   final String dishName;
-  bool isSelected;
-  DishSuggestionCardItem({super.key, required this.dishIcon, required this.dishName,required this.isSelected});
+  final bool isSelected;
+  const DishSuggestionCardItem({super.key, required this.dishIcon, required this.dishName,required this.isSelected});
 
 
   @override
@@ -29,7 +29,7 @@ class DishSuggestionCardItem extends StatelessWidget {
           children: [
             Icon(dishIcon,size: 40,),
             Text(dishName,style: AppTypography.blackw400.copyWith(fontSize: 11),),
-            CircularIconButton(icon: Icons.arrow_forward_ios, shadowColor: Colors.transparent, iconColor: AppColor.whiteColor, radius: 12,backgroundColor: AppColor.blackColor,iconSize: 13,)
+            const CircularIconButton(icon: Icons.arrow_forward_ios, shadowColor: Colors.transparent, iconColor: AppColor.whiteColor, radius: 12,backgroundColor: AppColor.blackColor,iconSize: 13,)
           ],
         ),
       ),

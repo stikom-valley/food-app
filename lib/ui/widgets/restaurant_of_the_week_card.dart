@@ -46,7 +46,7 @@ class RestaurantOfTheWeekCard extends StatelessWidget {
                       "Hengbok Restaurant",
                       style: AppTypography.redw400.copyWith(fontWeight: FontWeight.bold,fontSize: 18),
                     ),
-                    CircularIconButton(
+                    const CircularIconButton(
                       icon: Icons.arrow_forward,
                       shadowColor: AppColor.mainColor,
                       iconColor: AppColor.blackColor,
@@ -60,7 +60,7 @@ class RestaurantOfTheWeekCard extends StatelessWidget {
           Positioned(
             right: -75,
             top: MediaQuery.of(context).size.height*0.01,
-            child: Container(
+            child: SizedBox(
                 width:180,
                 height: MediaQuery.of(context).size.height*0.24,
                 child: Image.asset("assets/images/noodles.png")),

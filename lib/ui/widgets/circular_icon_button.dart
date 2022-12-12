@@ -8,9 +8,9 @@ class CircularIconButton extends StatelessWidget {
   final Color shadowColor;
   final Color iconColor;
   final double radius;
-  Color backgroundColor;
-  double iconSize;
-  CircularIconButton({super.key, required this.icon, this.onPressed,required this.shadowColor,required this.iconColor,required this.radius,this.backgroundColor=AppColor.whiteColor,this.iconSize=24});
+  final Color backgroundColor;
+  final double iconSize;
+  const CircularIconButton({super.key, required this.icon, this.onPressed,required this.shadowColor,required this.iconColor,required this.radius,this.backgroundColor=AppColor.whiteColor,this.iconSize=24});
 
 
   @override

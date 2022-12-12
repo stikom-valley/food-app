@@ -22,7 +22,7 @@ class RecommendedCard extends StatelessWidget {
                 Container(
                   width: double.infinity,
                   height: 140,
-                  margin: EdgeInsets.only(top: 18),
+                  margin: const EdgeInsets.only(top: 18),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: AppColor.yellowColor,

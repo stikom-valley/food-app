@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_app/ui/widgets/dish_suggestion_card_item.dart';
 
 class DishSuggestionCard extends StatefulWidget {
+  const DishSuggestionCard({super.key});
+
   @override
   State<DishSuggestionCard> createState() => _DishSuggestionCardState();
 }

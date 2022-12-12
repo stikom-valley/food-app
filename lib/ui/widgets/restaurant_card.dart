@@ -17,7 +17,7 @@ class RestaurantCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8),
+      margin: const EdgeInsets.symmetric(vertical: 8),
       height: 210,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
@@ -46,7 +46,7 @@ class RestaurantCard extends StatelessWidget {
                   )
                 ),
               ),
-              Positioned(
+              const Positioned(
                 top: 5,
                 right: 5,
                 child: CircularIconButton(
@@ -67,7 +67,7 @@ class RestaurantCard extends StatelessWidget {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 2,horizontal: 8),
-                    child: Text("${price} Mins",style: AppTypography.blackw400.copyWith(fontSize: 12),),
+                    child: Text("$price Mins",style: AppTypography.blackw400.copyWith(fontSize: 12),),
                   ),
                 ),
               )
@@ -89,7 +89,7 @@ class RestaurantCard extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(rating,style: AppTypography.whitew400.copyWith(fontSize: 11),),
-                          Icon(Icons.star,color: AppColor.whiteColor,size: 17,)
+                          const Icon(Icons.star,color: AppColor.whiteColor,size: 17,)
                         ],
                       ),
                     ),
@@ -99,7 +99,7 @@ class RestaurantCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(foods,style: AppTypography.greyw400.copyWith(fontSize: 11),),
-                    Text("\$${price} for one",style: AppTypography.greyw400.copyWith(fontSize: 11),)
+                    Text("\$$price for one",style: AppTypography.greyw400.copyWith(fontSize: 11),)
                   ],
                 )
               ],
