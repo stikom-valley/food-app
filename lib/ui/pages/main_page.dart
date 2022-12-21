@@ -78,7 +78,7 @@ class MainPage extends StatelessWidget {
                         Text("Let's Eat !!!",style: AppTypography.blackw400.copyWith(fontSize: 15),),
                         const RestaurantOfTheWeekCard(),
                         Text("What are you craving for ?",style: AppTypography.blackw400.copyWith(fontSize: 15),),
-                        DishSuggestionCard(),
+                        const DishSuggestionCard(),
                         Row(
                           children: [
                             Text("Recommended ",style: AppTypography.blackw400.copyWith(fontSize: 15),),

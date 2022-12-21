@@ -1,8 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:food_app/ui/widgets/circular_icon_button.dart';
-import 'package:food_app/utils/app_typography.dart';
+part of 'widgets.dart';
 
-import '../../utils/app_color.dart';
 
 class RestaurantCard extends StatelessWidget {
   final String restaurantName;

@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:food_app/ui/widgets/circular_icon_button.dart';
-
-import '../../utils/app_color.dart';
-import '../../utils/app_typography.dart';
+part of 'widgets.dart';
 
 class RestaurantOfTheWeekCard extends StatelessWidget {
   const RestaurantOfTheWeekCard({

@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:food_app/ui/widgets/dish_suggestion_card_item.dart';
+part of 'widgets.dart';
 
 class DishSuggestionCard extends StatefulWidget {
   const DishSuggestionCard({super.key});
