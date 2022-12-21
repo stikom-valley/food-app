@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/ui/pages/pages.dart';
 
+
 abstract class AppRoutes {
   static const String examplePage = "example_page";
   static const String mainPage = "main_page";
+  static const String loginPage = "login_page";
+  static const String signupPage = "signup_page";
 }
 
 class AppRouter {
@@ -15,6 +18,12 @@ class AppRouter {
       case AppRoutes.examplePage:
         final argsExample = args as String;
         screen = ExamplePage(argsExample: argsExample);
+        break;
+      case AppRoutes.loginPage:
+        screen = const LoginPage();
+        break;
+      case AppRoutes.signupPage:
+        screen = const SignupPage();
         break;
       case AppRoutes.mainPage:
         screen = const MainPage();

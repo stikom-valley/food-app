@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/utils/app_color.dart';
 import 'package:food_app/utils/app_router.dart';
 
 void main() {
@@ -10,9 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Food App',
-      initialRoute: AppRoutes.mainPage,
+      theme: ThemeData.light().copyWith(
+        colorScheme: const ColorScheme.light().copyWith(
+          primary: AppColor.mainColor
+        )
+      ),
+      initialRoute: AppRoutes.loginPage,
       onGenerateRoute: AppRouter.generateRoute,
     );
   }
