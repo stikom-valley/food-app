@@ -25,28 +25,28 @@ class _DishSuggestionCardState extends State<DishSuggestionCard> {
                     selectedItem=0;
                   });
                 },
-                child: DishSuggestionCardItem(dishIcon: Icons.local_pizza,dishName: "Pizza", isSelected: selectedItem==0?true:false,),),
+                child: DishSuggestionCardItem(dishIcon: 'assets/icons/Pizza.png',dishName: "Pizza", isSelected: selectedItem==0?true:false,),),
             GestureDetector(
                 onTap: (){
                   setState(() {
                     selectedItem=1;
                   });
                 },
-                child: DishSuggestionCardItem(dishIcon: Icons.add,dishName: "Burger", isSelected: selectedItem==1?true:false,),),
+                child: DishSuggestionCardItem(dishIcon: 'assets/icons/IceCreamSundae.png',dishName: "Burger", isSelected: selectedItem==1?true:false,),),
             GestureDetector(
                 onTap: (){
                   setState(() {
                     selectedItem=2;
                   });
                 },
-                child: DishSuggestionCardItem(dishIcon: Icons.add,dishName: "Sweet", isSelected: selectedItem==2?true:false,),),
+                child: DishSuggestionCardItem(dishIcon: 'assets/icons/Cheeseburger.png',dishName: "Sweet", isSelected: selectedItem==2?true:false,),),
             GestureDetector(
                 onTap: (){
                   setState(() {
                     selectedItem=3;
                   });
                 },
-                child: DishSuggestionCardItem(dishIcon: Icons.ramen_dining,dishName: "Ramen", isSelected: selectedItem==3?true:false,),),
+                child: DishSuggestionCardItem(dishIcon: 'assets/icons/Noodles.png',dishName: "Ramen", isSelected: selectedItem==3?true:false,),),
           ],
         ),
       ),

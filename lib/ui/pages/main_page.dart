@@ -82,7 +82,7 @@ class MainPage extends StatelessWidget {
                         Row(
                           children: [
                             Text("Recommended ",style: AppTypography.blackw400.copyWith(fontSize: 15),),
-                            const Icon(Icons.local_pizza_outlined,size: 30,),
+                            Image.asset('assets/icons/Pizza.png',height: 30,)
                           ],
                         ),
                         const RecommendedCard(),

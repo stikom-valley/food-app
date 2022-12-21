@@ -1,7 +1,7 @@
 part of 'widgets.dart';
 
 class DishSuggestionCardItem extends StatelessWidget {
-  final IconData dishIcon;
+  final String dishIcon;
   final String dishName;
   final bool isSelected;
   const DishSuggestionCardItem({super.key, required this.dishIcon, required this.dishName,required this.isSelected});
@@ -24,7 +24,7 @@ class DishSuggestionCardItem extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 10),
         child: Column(
           children: [
-            Icon(dishIcon,size: 40,),
+            Image.asset(dishIcon,height:40),
             Text(dishName,style: AppTypography.blackw400.copyWith(fontSize: 11),),
             const CircularIconButton(icon: Icons.arrow_forward_ios, shadowColor: Colors.transparent, iconColor: AppColor.whiteColor, radius: 12,backgroundColor: AppColor.blackColor,iconSize: 13,)
           ],
