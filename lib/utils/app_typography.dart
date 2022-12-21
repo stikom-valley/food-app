@@ -27,4 +27,9 @@ abstract class AppTypography {
     color: AppColor.greyColor,
     fontWeight: FontWeight.w400,
   );
+
+  static TextStyle mainw400 = GoogleFonts.poppins(
+    color: AppColor.mainColor,
+    fontWeight: FontWeight.w400,
+  );
 }
